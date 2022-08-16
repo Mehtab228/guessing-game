@@ -24,7 +24,7 @@ case 'yes':
   break;
 case 'no':
 case 'n':
-  alert('Ah, try again next time!');
+  alert('Incorrect Answer!');
   break;
 default:
   alert('Try again next time!');
@@ -60,7 +60,7 @@ case 'y':
   break;
 case 'no':
 case 'n':
-  alert('Try again next time!');
+  alert('Incorrect Answer!');
   break;
 default:
   alert('You don\'t like following instructions do you?');
@@ -96,7 +96,7 @@ case 'y':
   break;
 case 'no':
 case 'n':
-  alert('Try again next time!');
+  alert('Incorrect Answer!');
   break;
 default:
   alert('Try again next time!');
