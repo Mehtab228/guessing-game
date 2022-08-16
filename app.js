@@ -99,7 +99,7 @@ case 'n':
   alert('Try again next time!');
   break;
 default:
-  alert('Try again next time!')
+  alert('Try again next time!');
 }
 
 
