@@ -1,0 +1,28 @@
+header{
+    background-color: lightblue;
+    border-bottom: 1px cornflowerblue;
+    text-align: center;
+    margin: 0px 223px;
+    padding: 0px auto;
+}
+
+.first {
+    text-align: center;
+}
+
+main {
+    background-color: yellow;
+}
+nav {
+    display: inline-block;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+    padding-bottom: 20px;
+}
