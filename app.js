@@ -18,13 +18,15 @@ if (typeof(outdoors) === 'string'){
 }
 
 switch (outdoors){
-case 'yes' || 'y':
+case 'y':
+case 'yes':
   alert('You\'re correct!');
   break;
-case 'no || n':
+case 'no':
+case 'n':
   alert('Ah, try again next time!');
   break;
-default: 
+default:
   alert('Try again next time!');
 }
 
@@ -34,10 +36,12 @@ if (typeof(pollen) === 'string'){
 }
 
 switch (pollen){
-case 'yes' || 'y':
+case 'yes':
+case 'y':
   alert('You\'re correct!');
   break;
-case 'no || n':
+case 'no':
+case 'n':
   alert('Come on it\'s literally the worst!');
   break;
 default:
@@ -50,10 +54,12 @@ if (typeof(sushi) === 'string'){
 }
 
 switch (sushi){
-case 'yes' || 'y':
+case 'yes':
+case 'y':
   alert('You are correct!');
   break;
-case 'no' || 'n':
+case 'no':
+case 'n':
   alert('Try again next time!');
   break;
 default:
@@ -66,14 +72,34 @@ if (typeof(newgirl) === 'string'){
 }
 
 switch (newgirl){
-case 'yes' || 'y':
+case 'yes':
+case 'y':
   alert('You\'re right and you have great taste in tv shows!');
   break;
-case 'no' || 'n':
+case 'no':
+case 'n':
   alert('You need to watch the show!');
   break;
 default:
   alert('Come on thats the 4th time! Try again!');
+}
+
+let basketball = prompt('Do I like to watch basketball? Please answer yes or no!')
+if (typeof(basketball) === 'string'){
+  basketball = basketball.toLowerCase();
+}
+
+switch (basketball){
+case 'yes':
+case 'y':
+  alert('You\'re right');
+  break;
+case 'no':
+case 'n':
+  alert('Try again next time!');
+  break;
+default:
+  alert('Try again next time!')
 }
 
 
