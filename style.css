@@ -1,6 +1,5 @@
 header{
     background-color: lightblue;
-    border-bottom: 0px cornflowerblue;
     text-align: center;
     margin: 0px 2px;
     padding: 0px auto;
@@ -10,14 +9,8 @@ h2 {
     margin-top: 0rem;
 }
 
-.image2 {
-float: left;
-height: 200px;
-margin-top: -1.16rem;
-}
-
 .first {
-    text-align: center;
+    text-align: center; 
     padding-top: 1rem;
     margin-top: -1rem;
     color: brown;
@@ -36,7 +29,58 @@ nav ul {
     margin: 0;
 }
 nav li {
-    display: inline-block;
+    display: inline-block;  
     margin-right: 10px;
     padding-bottom: 20px;
 }
+
+.top10 {
+    background-color: green;
+    color: aqua;
+    padding: 1px;
+    display: block;
+    text-align: center;
+    margin-top: 0px;
+}
+.top10 ol {
+    width: 300px;
+    margin: auto;
+    margin-top: -10px;
+}
+.top10 li {
+    padding-top: 10px;
+    text-align: left;
+}
+
+.help {
+    border: solid;
+    text-align: left;
+    padding-left: 0px;
+    display: inline-block;
+    margin-left: -660px;
+    font-weight: 800;
+}
+
+h3 {
+   padding-left: 70px;
+   margin-top: 1px;
+}
+
+.first ul {
+    text-align: left;
+    margin-top: -13px;
+}
+
+.help2 {
+    border: solid;
+    text-align: left;
+    padding-left: 0px;
+    display: inline-block;
+    margin-left: -610px;
+    font-weight: 800;
+}
+
+
+
+
+
