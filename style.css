@@ -1,13 +1,27 @@
 header{
     background-color: lightblue;
-    border-bottom: 1px cornflowerblue;
+    border-bottom: 0px cornflowerblue;
     text-align: center;
-    margin: 0px 223px;
+    margin: 0px 2px;
     padding: 0px auto;
+}
+
+h2 {
+    margin-top: 0rem;
+}
+
+.image2 {
+float: left;
+height: 200px;
+margin-top: -1.16rem;
 }
 
 .first {
     text-align: center;
+    padding-top: 1rem;
+    margin-top: -1rem;
+    color: brown;
+    border: 10px solid brown;
 }
 
 main {
