@@ -101,7 +101,7 @@ switch (basketball) {
   default:
     alert('Try again next time!');
 }
-*/
+
 let questions = [
   'How many highschools have I attended?'
 ];
@@ -121,6 +121,42 @@ for (let i = 0; i < 4; i++) {
   }
   else if (response === '3'){
     alert('you\'re so close!');
+  }
+}
+
+*/
+
+let questions = [
+  'What is my favourite movie?'
+];
+
+let answers = [
+  'The Other Guys',
+  'Hot Fuzz',
+  'Harry Potter and the Prisoner of Azkaban'
+];
+let guess = false;
+for (let i = 0; i < 6; i++) {
+  console.log('I loop ', i);
+  if (guess === true){
+    console.log('Guess is true, break i loop');
+    break;
+  }
+  let response = prompt(questions[0]);
+  response = response.toLowerCase();
+  for (let j = 0; j < answers.length; j++){
+    console.log('J loop ', j);
+    if (response === answers[j].toLowerCase()) {
+      alert('You are correct!');
+      guess = true;
+      break;
+    }
+    else {
+      console.log(answers[j] + ' is wrong');
+    }
+
+  } if (guess === false){
+    alert('Hint:Think of Wizards!');
   }
 }
 
