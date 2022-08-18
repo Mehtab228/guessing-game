@@ -1,5 +1,7 @@
 'use strict';
 
+let score = 0;
+
 function getName() {
   let user = prompt('What is your name?');
   if (user === '' || user === null || undefined) {
@@ -22,6 +24,7 @@ switch (outdoors) {
 case 'y':
 case 'yes':
   alert('You\'re correct!');
+  score++;
   break;
 case 'no':
 case 'n':
@@ -40,6 +43,7 @@ switch (pollen) {
 case 'yes':
 case 'y':
   alert('You\'re correct!');
+  score++
   break;
 case 'no':
 case 'n':
@@ -58,6 +62,7 @@ switch (sushi) {
 case 'yes':
 case 'y':
   alert('You are correct!');
+  score++
   break;
 case 'no':
 case 'n':
@@ -76,6 +81,7 @@ switch (newgirl) {
 case 'yes':
 case 'y':
   alert('You\'re right and you have great taste in tv shows!');
+  score++
   break;
 case 'no':
 case 'n':
@@ -94,6 +100,7 @@ switch (basketball) {
 case 'yes':
 case 'y':
   alert('You\'re right');
+  score++
   break;
 case 'no':
 case 'n':
@@ -115,6 +122,7 @@ for (let i = 0; i < 4; i++) {
   let response = prompt(questions[0]);
   if (response === answers[0]) {
     alert('You are correct!');
+    score++
     break;
   }
   else if (response === '1' || response === '2') {
@@ -150,6 +158,7 @@ for (let i = 0; i < 6; i++) {
     console.log('J loop ', j);
     if (response === newanswers[j].toLowerCase()) {
       alert('You are correct!');
+      score++
       guess = true;
       break;
     }
@@ -163,3 +172,4 @@ for (let i = 0; i < 6; i++) {
 }
 alert('Correct answers were The Other Guys, Hot Fuzz, and Harry Potter and the Prisoner of Azkaban');
 
+alert('You scoured ' + score + ' out of 7');
