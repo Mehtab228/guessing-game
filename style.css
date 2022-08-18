@@ -53,11 +53,10 @@ nav li {
 }
 
 .help {
-    border: solid;
     text-align: left;
     padding-left: 0px;
-    display: inline-block;
-    margin-left: -660px;
+    display: block;
+    margin-left: 40px;
     font-weight: 800;
 }
 
@@ -72,12 +71,12 @@ h3 {
 }
 
 .help2 {
-    border: solid;
     text-align: left;
     padding-left: 0px;
-    display: inline-block;
-    margin-left: -610px;
+    display: block;
+    margin-left: 40px;
     font-weight: 800;
+    padding-right: 0px;
 }
 
 
