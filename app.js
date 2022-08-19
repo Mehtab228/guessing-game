@@ -41,7 +41,7 @@ questionOne();
 function questionTwo() {
   let pollen = prompt('Is pollen the worst? Please answer yes or no!');
   while (pollen === null || pollen === '') {
-    alert('Please follow the instuctions you potato.');
+    alert('Please follow the instuctions you.');
     pollen = prompt('Do I like the outdoors? Please answer yes or no');
   }
   pollen = pollen.toLowerCase();
@@ -61,63 +61,74 @@ function questionTwo() {
 }
 questionTwo();
 
-
-let sushi = prompt('Do I like sushi? Please answer yes or no!');
-if (typeof (sushi) === 'string') {
+function questionThree() {
+  let sushi = prompt('Do I like sushi? Please answer yes or no!');
+  while (sushi === null || sushi === '') {
+    alert('Please follow the instuctions.');
+    sushi = prompt('Do I like the outdoors? Please answer yes or no');
+  }
   sushi = sushi.toLocaleLowerCase();
+  switch (sushi) {
+  case 'yes':
+  case 'y':
+    alert('You are correct!');
+    score++;
+    break;
+  case 'no':
+  case 'n':
+    alert('Incorrect Answer!');
+    break;
+  default:
+    alert('You don\'t like following instructions do you?');
+  }
 }
+questionThree();
 
-switch (sushi) {
-case 'yes':
-case 'y':
-  alert('You are correct!');
-  score++;
-  break;
-case 'no':
-case 'n':
-  alert('Incorrect Answer!');
-  break;
-default:
-  alert('You don\'t like following instructions do you?');
-}
-
-let newgirl = prompt('Is New Girl one of my favourite shows? Please answer yes or no!');
-if (typeof (newgirl) === 'string') {
+function questionFour(){
+  let newgirl = prompt('Is New Girl one of my favourite shows? Please answer yes or no!');
+  while (newgirl === null || newgirl === ''){
+    alert('Please follow the instructions');
+    newgirl = prompt('Is New Girl one of my favourite shows? Please answer yes or no!');
+  }
   newgirl = newgirl.toLocaleLowerCase();
+  switch (newgirl) {
+  case 'yes':
+  case 'y':
+    alert('You\'re right and you have great taste in tv shows!');
+    score++;
+    break;
+  case 'no':
+  case 'n':
+    alert('You need to watch the show!');
+    break;
+  default:
+    alert('Come on thats the 4th time! Try again!');
+  }
 }
+questionFour();
 
-switch (newgirl) {
-case 'yes':
-case 'y':
-  alert('You\'re right and you have great taste in tv shows!');
-  score++;
-  break;
-case 'no':
-case 'n':
-  alert('You need to watch the show!');
-  break;
-default:
-  alert('Come on thats the 4th time! Try again!');
-}
-
-let basketball = prompt('Do I like to watch basketball? Please answer yes or no!')
-if (typeof (basketball) === 'string') {
+function questionFive(){
+  let basketball = prompt('Do I like to watch basketball? Please answer yes or no!');
+  while (basketball === null || basketball === '') {
+    alert('Please follow the instructions!');
+    basketball = prompt('Do I like to watch basketball? Please answer yes or no!')
+  }
   basketball = basketball.toLowerCase();
+  switch (basketball) {
+  case 'yes':
+  case 'y':
+    alert('You\'re right');
+    score++;
+    break;
+  case 'no':
+  case 'n':
+    alert('Incorrect Answer!');
+    break;
+  default:
+    alert('Try again next time!');
+  }
 }
-
-switch (basketball) {
-case 'yes':
-case 'y':
-  alert('You\'re right');
-  score++;
-  break;
-case 'no':
-case 'n':
-  alert('Incorrect Answer!');
-  break;
-default:
-  alert('Try again next time!');
-}
+questionFive();
 
 let questions = [
   'How many highschools have I attended?'
