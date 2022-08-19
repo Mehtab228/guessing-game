@@ -2,41 +2,41 @@
 
 let score = 0;
 
-// function getName() {
-//   let user = prompt('What is your name?');
-//   if (user === '' || user === null || undefined) {
-//     alert('That\'s not a name try again!');
-//     getName();
-//   } else {
-//     alert('Hey ' + user + ' welcome to my page! ');
-//   }
-// }
+function getName() {
+  let user = prompt('What is your name?');
+  if (user === '' || user === null || undefined) {
+    alert('That\'s not a name try again!');
+    getName();
+  } else {
+    alert('Hey ' + user + ' welcome to my page! ');
+  }
+}
 
-// getName();
+getName();
 
-// function questionOne() {
-//   let outdoors = prompt('Do I like the outdoors? Please answer yes or no');
-//   while (outdoors === null || outdoors === '') {
-//     alert('Please follow the instuctions you potato.');
-//     outdoors = prompt('Do I like the outdoors? Please answer yes or no');
-//   }
-//   outdoors = outdoors.toLowerCase();
-//   switch (outdoors) {
-//   case 'y':
-//   case 'yes':
-//     alert('You\'re correct!');
-//     score++;
-//     break;
-//   case 'no':
-//   case 'n':
-//     alert('Incorrect Answer!');
-//     break;
-//   default:
-//     alert('Try again next time!');
-//   }
-// }
+function questionOne() {
+  let outdoors = prompt('Do I like the outdoors? Please answer yes or no');
+  while (outdoors === null || outdoors === '') {
+    alert('Please follow the instuctions you potato.');
+    outdoors = prompt('Do I like the outdoors? Please answer yes or no');
+  }
+  outdoors = outdoors.toLowerCase();
+  switch (outdoors) {
+  case 'y':
+  case 'yes':
+    alert('You\'re correct!');
+    score++;
+    break;
+  case 'no':
+  case 'n':
+    alert('Incorrect Answer!');
+    break;
+  default:
+    alert('Try again next time!');
+  }
+}
 
-// questionOne();
+questionOne();
 
 function questionTwo() {
   let pollen = prompt('Is pollen the worst? Please answer yes or no!');
@@ -46,20 +46,20 @@ function questionTwo() {
   }
   pollen = pollen.toLowerCase();
   switch (pollen) {
-    case 'yes':
-    case 'y':
-      alert('You\'re correct!');
-      score++;
-      break;
-    case 'no':
-    case 'n':
-      alert('Come on it\'s literally the worst!');
-      break;
-    default:
-      alert('Try again next time!');
+  case 'yes':
+  case 'y':
+    alert('You\'re correct!');
+    score++;
+    break;
+  case 'no':
+  case 'n':
+    alert('Come on it\'s literally the worst!');
+    break;
+  default:
+    alert('Try again next time!');
   }
 }
-// questionTwo();
+questionTwo();
 
 
 let sushi = prompt('Do I like sushi? Please answer yes or no!');
@@ -71,7 +71,7 @@ switch (sushi) {
 case 'yes':
 case 'y':
   alert('You are correct!');
-  score++
+  score++;
   break;
 case 'no':
 case 'n':
@@ -90,7 +90,7 @@ switch (newgirl) {
 case 'yes':
 case 'y':
   alert('You\'re right and you have great taste in tv shows!');
-  score++
+  score++;
   break;
 case 'no':
 case 'n':
@@ -109,7 +109,7 @@ switch (basketball) {
 case 'yes':
 case 'y':
   alert('You\'re right');
-  score++
+  score++;
   break;
 case 'no':
 case 'n':
@@ -131,7 +131,7 @@ for (let i = 0; i < 4; i++) {
   let response = prompt(questions[0]);
   if (response === answers[0]) {
     alert('You are correct!');
-    score++
+    score++;
     break;
   }
   else if (response === '1' || response === '2') {
@@ -167,7 +167,7 @@ for (let i = 0; i < 6; i++) {
     console.log('J loop ', j);
     if (response === newanswers[j].toLowerCase()) {
       alert('You are correct!');
-      score++
+      score++;
       guess = true;
       break;
     }
