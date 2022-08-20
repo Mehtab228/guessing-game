@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+
+h1{
+    font-family: 'Rubik Dirt', cursive;
+    color: darkblue
+}
+
 header{
     background-color: lightblue;
     text-align: center;
@@ -10,11 +17,12 @@ h2 {
 }
 
 .first {
+    display: flex;
     text-align: center; 
     padding-top: 1rem;
     margin-top: -1rem;
     color: brown;
-    border: 10px solid brown;
+    border: 10px solid brown
 }
 
 main {
@@ -38,10 +46,17 @@ nav li {
     background-color: green;
     color: aqua;
     padding: 1px;
-    display: block;
+    display: flex;
     text-align: center;
     margin-top: 0px;
+    justify-content: space-around;
+    align-items: center;
 }
+
+.coding {
+    margin-left: 150px;
+}
+
 .top10 ol {
     width: 300px;
     margin: auto;
@@ -79,7 +94,18 @@ h3 {
     padding-right: 0px;
 }
 
+.image-container {
+    float: left;
+    margin: auto;
+}
 
+.image-containerleft img {
+    float: left;
+}
 
+.image-container img {
+    float: left;
+    width: 300px;
+}
 
 

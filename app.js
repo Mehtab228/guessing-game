@@ -111,7 +111,7 @@ function questionFive(){
   let basketball = prompt('Do I like to watch basketball? Please answer yes or no!');
   while (basketball === null || basketball === '') {
     alert('Please follow the instructions!');
-    basketball = prompt('Do I like to watch basketball? Please answer yes or no!')
+    basketball = prompt('Do I like to watch basketball? Please answer yes or no!');
   }
   basketball = basketball.toLowerCase();
   switch (basketball) {
@@ -193,3 +193,4 @@ for (let i = 0; i < 6; i++) {
 alert('Correct answers were The Other Guys, Hot Fuzz, and Harry Potter and the Prisoner of Azkaban');
 
 alert('You scoured ' + score + ' out of 7');
+
